@@ -1,0 +1,18 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  h1, h2 {
+    color: #333;
+  }
+  section {
+    margin-bottom: 20px;
+  }
+  footer {
+    background-color: #f8f9fa;
+    color: #555;
+  }
+  .card img {
+    height: 200px;
+    object-fit: cover;
+  }
+  

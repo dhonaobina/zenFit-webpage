@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZenFit Studio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">ZenFit Studio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="text-center p-5 bg-light">
+    <div class="container">
+      <h1>Welcome to ZenFit Studio</h1>
+      <p>Your fitness sanctuary in Auckland CBD</p>
+      <a href="#services" class="btn btn-primary">Explore Classes</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="p-5">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>At ZenFit Studio, we specialize in yoga, Pilates, and HIIT, helping urban professionals achieve holistic wellness.</p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="p-5 bg-light">
+    <div class="container">
+      <h2>Our Classes</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="yoga.jpg" class="card-img-top" alt="Yoga">
+            <div class="card-body">
+              <h5 class="card-title">Yoga</h5>
+              <p class="card-text">Discover inner peace and flexibility through our yoga classes.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="pilates.jpg" class="card-img-top" alt="Pilates">
+            <div class="card-body">
+              <h5 class="card-title">Pilates</h5>
+              <p class="card-text">Strengthen your core with our energizing Pilates sessions.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="hiit.jpg" class="card-img-top" alt="HIIT">
+            <div class="card-body">
+              <h5 class="card-title">HIIT</h5>
+              <p class="card-text">Boost your stamina with high-intensity interval training.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="p-5">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Your Name">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Your Email">
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" rows="4"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="text-center p-3 bg-light">
+    <p>&copy; 2025 ZenFit Studio. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
