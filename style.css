@@ -19,7 +19,24 @@ body {
     display: flex;
     align-items: center;
     font-size: 14px;
-    gap: 5px;
+    gap: 3px;
+}
+
+@media (max-width: 768px) {
+    .header-top {
+        display: none; /* Hides the text on devices with width <= 768px */
+    }
+}
+
+.header-top span {
+    display: flex;
+    align-items: center; /* Aligns items vertically in the center */
+    gap: 10px; /* Adds a 5px space between elements (letter 'm' and the phone icon) */
+}
+
+.header-top img {
+    height: 20px;
+    width: 15px;
 }
 
 .header-bottom {
@@ -63,6 +80,14 @@ body {
     margin-left: 10px;
     width: 24px;
 }
+
+@media (max-width: 768px) {
+    .social-icons {
+        display: none; /* Hides the text on devices with width <= 768px */
+    }
+}
+
+
 
 a {
     text-decoration: none;
