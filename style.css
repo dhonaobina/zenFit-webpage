@@ -8,7 +8,7 @@ body {
 /*NAV-BAR*/
 .header-top {
     background-color: #3e3e5b;
-    color: white;
+    color: #FFFFFF;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
@@ -67,7 +67,7 @@ body {
     text-align: center;
     font-size: 24px; /* Adjust the text size */
     font-weight: bold; /* Makes the text bold */
-    color: #3E3E5B; /* Matches your design's color scheme */
+    color: #FFFFFF; /* Matches your design's color scheme */
 }
 
 @media (max-width: 768px) {
@@ -87,16 +87,336 @@ body {
     }
 }
 
-
-
 a {
     text-decoration: none;
-    color: whitesmoke;
+    color: #FFFFFF;
 }
 
 a:hover {
-    color: whitesmoke;
+    color: #FFFFFF;
 }
 
 /*END of NAV-BAR*/
+
+/*HERO SECTION*/
+.hero {
+    position: relative;
+    width: 100%;
+    height: 80vh; /* Adjust height as needed */
+    background: url('img/home-pilates.avif') no-repeat center top;
+    background-size: cover;
+    background-image: center 10%;
+    display: flex;
+    justify-content: start;
+    align-items: flex-end;
+    text-align: center;
+    padding: 30px;
+    object-fit: cover;
+    z-index: 1; /* Ensure content is above the pseudo-element */
+    
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(228, 223, 223, 0.416); /* Adjust opacity (0.5 = 50%) */
+    z-index: -1; /* Place the pseudo-element behind the content */
+}
+
+
+.hero-content {
+    max-width: 600px;
+    position: relative; /* Ensure content is above the pseudo-element */
+    z-index: 1; /* Explicitly set z-index for hero content */
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 50px;
+    text-shadow: 0px 4px 4px #f8f8f89b;
+    font-family: "Montserrat-BlackItalic", Helvetica;
+    font-weight: 900;
+    color: #000000FC;
+    z-index: 5; /* Ensure h1 is above the pseudo-element */
+    position: relative;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 20px 30px;
+    text-shadow: 0px 4px 4px #f8f8f89b;
+    font-family: "Montserrat-SemiBold", Helvetica;
+    font-weight: 500;
+    color: #000000FC; /* Fixed color syntax */
+    z-index: 2; /* Ensure p is above the pseudo-element */
+    position: relative;
+    font-size: 2rem;
+}
+
+.hero-buttons .btn {
+    margin: 10px;
+    padding: 15px 25px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    z-index: 2; /* Ensure buttons are above the pseudo-element */
+    cursor: pointer;
+}
+
+.hero-buttons .join-now {
+    background-color: #0EA68AD4;
+    color: #FFFFFF;
+   
+}
+
+.hero-buttons .book-class {
+    background-color: #3E3E5B;
+    color: #FFFFFF;
+
+}
+
+.hero-buttons .btn:hover {
+    opacity: 0.8;
+}
+
+/*END of HERO SECTION*/
+
+
+/*HOME CONTENT*/
+
+.services {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    align-items: stretch; 
+    align-items: flex-start;
+    gap: 20px;
+    padding: 40px;
+    background-color: #f4f4f4;
+}
+
+.service-card {
+    flex: 1 1 calc(33.33% - 20px); 
+    max-width: 500px;  aspect-ratio: 1 / 1.2;
+    text-align: center;
+    background-color: #FFFFFF;
+    border: 2px solid #EAEAEA;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 550px; /* Set a fixed height for the card */
+}
+
+.primary-card {
+    position: relative; 
+    background-color: #EFA7A7; 
+    padding: 0;
+    flex-grow: 1;
+    text-align: center; 
+}
+
+.primary-card img {
+    width: 60%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensures the image fits nicely */
+    border-radius: 10px;
+    display: block; /* Removes inline spacing */
+    margin: 0 auto; /* Centers the image horizontally */
+}
+
+.primary-card h3,
+.primary-card p {
+    position: absolute;
+    bottom: 25%; /* Position the text 3/4 of the way down the image */
+    left: 50%;
+    transform: translateX(-50%); /* Center the text horizontally */
+    color: #FFFFFF; /* Text color for contrast */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); /* Add shadow for better readability */
+    text-align: center;
+    margin: 0;
+    padding: 0 10px;
+    width: 90%; /* Ensure text doesn't overflow */
+}
+
+.primary-card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.primary-card p {
+    font-size: 1rem;
+    color: #FFFFFF;
+    .service-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #FFFFFF;
+    border: 2px solid #EAEAEA;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .primary-card {
+        position: relative; /* Set relative positioning for absolute child elements */
+        background-color: #EFA7A7;
+        padding: 0;
+        flex-grow: 1;
+    }
+    
+    .primary-card img {
+        width: 100%; /* Make the image responsive */
+        height: auto; /* Maintain aspect ratio */
+        object-fit: cover; /* Ensures the image fits nicely */
+        display: block;
+    }
+    
+    .primary-card h3,
+    .primary-card p {
+        position: absolute;
+        bottom: 50%; /* Position the text 3/4 of the way down the image */
+        left: 50%;
+        transform: translateX(-50%); /* Center the text horizontally */
+        color: #FFFFFF; /* Text color for contrast */
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); /* Add shadow for better readability */
+        text-align: center;
+        margin: 0;
+        padding: 0 10px;
+        width: 90%; /* Ensure text doesn't overflow */
+    }
+    
+    .primary-card h3 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    
+    .primary-card p {
+        font-size: 1rem;
+        font-weight: 400;
+        margin-top: 00px
+    }
+}
+
+.secondary-card {
+    background-color: #3E3E5B;
+    color: #FFFFFF;
+    padding: 15px;
+    font-size: 0.9rem;
+    text-align: center;
+    height: 100px; /* Fixed height for the secondary card */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .service-card {
+        flex: 1 1 100%; /* Stack cards vertically on smaller screens */
+        max-width: 100%; /* Full width for smaller screens */
+        aspect-ratio: auto; /* Allow height to adjust based on content */
+    }
+
+    .primary-card img {
+        height: 50vh; 
+        object-fit: contain; 
+}
+
+/*End of HOME CONTENT*/
+
+/*FOOTER*/
+.footer {
+    color: #FFFFFF; /* White text color */
+    padding: 40px 20px;
+    text-align: center;
+    width: 100%; /* Full width */
+    height: auto; /* Match the height of the hero section */
+    position: relative;
+    gap: 20px; /* Adds space between elements */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.footer-column h5 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.footer-column p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #EAEAEA;
+}
+
+.newsletter-form button {
+    padding: 10px 15px;
+    background-color: #0EA68A;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newsletter-form button:hover {
+    background-color: #0C8A6E;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.8rem;
+    color: #CCCCCC;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer {
+        height: auto; /* Allow height to adjust on smaller screens */
+        padding: 20px;
+    }
+
+    .footer-column {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .newsletter-form input {
+        width: 100%;
+    }
+
+    .newsletter-form button {
+        width: 100%;
+    }
+}
+/*END of FOOTER*/
+
 
