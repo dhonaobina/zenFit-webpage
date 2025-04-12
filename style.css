@@ -228,12 +228,14 @@ a:hover {
     border-radius: 10px;
     display: block; /* Removes inline spacing */
     margin: 0 auto; /* Centers the image horizontally */
+    padding: 5px; /* Adds padding around the image */
 }
 
+   
 .primary-card h3,
 .primary-card p {
     position: absolute;
-    bottom: 25%; /* Position the text 3/4 of the way down the image */
+    bottom: 50%; /* Position the text 3/4 of the way down the image */
     left: 50%;
     transform: translateX(-50%); /* Center the text horizontally */
     color: #FFFFFF; /* Text color for contrast */
@@ -245,76 +247,39 @@ a:hover {
 }
 
 .primary-card h3 {
-    font-size: 1.5rem;
+    position: absolute;
+    bottom: 20%; /* Position the heading near the bottom */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    font-size: 2.5rem;
     font-weight: bold;
-    color: #FFFFFF;
-    margin-top: 10px;
-    margin-bottom: 5px;
+    color: #FFFFFF; /* White text for contrast */
     text-transform: uppercase;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); /* Add shadow for better readability */
+    margin: 0;
 }
 
 .primary-card p {
-    font-size: 1rem;
-    color: #FFFFFF;
-    .service-card {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    background-color: #FFFFFF;
-    border: 2px solid #EAEAEA;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-    
-    .primary-card {
-        position: relative; /* Set relative positioning for absolute child elements */
-        background-color: #EFA7A7;
-        padding: 0;
-        flex-grow: 1;
-    }
-    
-    .primary-card img {
-        width: 100%; /* Make the image responsive */
-        height: auto; /* Maintain aspect ratio */
-        object-fit: cover; /* Ensures the image fits nicely */
-        display: block;
-    }
-    
-    .primary-card h3,
-    .primary-card p {
-        position: absolute;
-        bottom: 50%; /* Position the text 3/4 of the way down the image */
-        left: 50%;
-        transform: translateX(-50%); /* Center the text horizontally */
-        color: #FFFFFF; /* Text color for contrast */
-        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); /* Add shadow for better readability */
-        text-align: center;
-        margin: 0;
-        padding: 0 10px;
-        width: 90%; /* Ensure text doesn't overflow */
-    }
-    
-    .primary-card h3 {
-        font-size: 1.5rem;
-        font-weight: bold;
-        margin-bottom: 10px;
-    }
-    
-    .primary-card p {
-        font-size: 1rem;
-        font-weight: 400;
-        margin-top: 00px
-    }
+    position: absolute;
+    bottom: 50%; /* Position the paragraph above the heading */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #FFFFFF; /* White text for contrast */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); /* Add shadow for better readability */
+    margin: 0;
+    width: 90%; /* Ensure text doesn't overflow */
 }
 
 .secondary-card {
+    position: relative;
     background-color: #3E3E5B;
     color: #FFFFFF;
     padding: 15px;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     text-align: center;
-    height: 100px; /* Fixed height for the secondary card */
+    height: 50px; /* Fixed height for the secondary card */
 }
 
 /* Responsive Design */
@@ -334,23 +299,16 @@ a:hover {
 
 /*FOOTER*/
 .footer {
-    color: #FFFFFF; /* White text color */
-    padding: 40px 20px;
+    background-color: #3E3E5B; 
+    color: #FFFFFF;
+    padding: 20px 20px;
     text-align: center;
-    width: 100%; /* Full width */
-    height: auto; /* Match the height of the hero section */
-    position: relative;
-    gap: 20px; /* Adds space between elements */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    
 }
 
 .footer-column h5 {
-    font-size: 2rem;
+    font-size: 1.2rem;
     font-weight: bold;
-    margin-bottom: 15px;
+    
 }
 
 .footer-column p {
@@ -358,65 +316,17 @@ a:hover {
     font-size: 0.9rem;
 }
 
-.newsletter-form {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 10px;
-}
-
-.newsletter-form input {
-    flex: 1;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #EAEAEA;
-}
-
-.newsletter-form button {
-    padding: 10px 15px;
-    background-color: #0EA68A;
-    color: #FFFFFF;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.newsletter-form button:hover {
-    background-color: #0C8A6E;
-}
 
 .footer-bottom {
-    margin-top: 20px;
     font-size: 0.8rem;
     color: #CCCCCC;
 }
 
+
 /* Responsive Design */
-@media (max-width: 768px) {
-    .footer {
-        height: auto; /* Allow height to adjust on smaller screens */
-        padding: 20px;
-    }
-
+@media (min-width: 768px) {
     .footer-column {
-        margin-bottom: 20px;
-        text-align: center;
-    }
-
-    .newsletter-form {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .newsletter-form input {
-        width: 100%;
-    }
-
-    .newsletter-form button {
-        width: 100%;
+        text-align: left; /* Align text to the left on larger screens */
     }
 }
 /*END of FOOTER*/
-
-
