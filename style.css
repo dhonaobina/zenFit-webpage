@@ -211,6 +211,13 @@ a:hover {
     display: flex;
     flex-direction: column;
     height: 550px; /* Set a fixed height for the card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    overflow: hidden;
+}
+.service-card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
 }
 
 .primary-card {
@@ -219,6 +226,11 @@ a:hover {
     padding: 0;
     flex-grow: 1;
     text-align: center; 
+    transition: background-color 0.3s ease;
+}
+
+.primary-card:hover {
+    background-color: #F7D1D1 /* Add a subtle overlay effect */
 }
 
 .primary-card img {
@@ -279,7 +291,7 @@ a:hover {
     padding: 15px;
     font-size: 0.95rem;
     text-align: center;
-    height: 50px; /* Fixed height for the secondary card */
+    height: 80px; /* Fixed height for the secondary card */
 }
 
 /* Responsive Design */
