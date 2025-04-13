@@ -260,4 +260,12 @@
     letter-spacing: 0.2px; /* Added letter-spacing for better readability */
 }
 
+/*About Content*/
+/*Trainer Section*/
+.card-img-top {
+    width: 100%; /* Make the image responsive to the card's width */
+    height: 200px; /* Set a fixed height for uniformity */
+    object-fit: cover; /* Ensure the image scales and crops proportionally */
+    border-radius: 5px; /* Optional: Add rounded corners */
+}
 
