@@ -73,7 +73,7 @@
                     <input type="password" class="form-control" id="loginPassword" name="password" required>
                 </div>
                 <div class="text-danger text-center" id="loginError"></div>
-                <button type="submit" class="btn btn-primary w-100 mb-5">Login</button>
+                <button type="submit" class="btn btn-primary w-100 mb-5" style="background-color: #3E3E5B; border:#3E3E5B">Login</button>
             </form>
         </div>
 
@@ -99,6 +99,17 @@
                 <div class="mb-3">
                     <label for="joinAddress" class="form-label">Address</label>
                     <input type="text" class="form-control" id="joinAddress" name="address" required>
+                </div>
+                <div class="mb-3">
+                    <label for="gender" class="form-label">Gender</label>
+                    <select class="form-select" id="gender" name="gender" required>
+                        <option value="" selected disabled>Select</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="non-binary">Non-Binary</option>
+                        <option value="prefer_not_to_say">Prefer not to say</option>
+                        <option value="other">Other</option>
+                    </select>
                 </div>
                 <div class="mb-3">
                     <label for="membershipPlan" class="form-label">Membership Plan</label>
@@ -191,7 +202,7 @@
                     <label for="fitnessGoals" class="form-label">What are your primary fitness goals? (e.g., weight loss, strength training, endurance improvement)</label>
                     <input type="text" class="form-control" id="fitnessGoals" name="fitness_goals">
                 </div>
-                <button type="submit" class="btn btn-success w-100 mb-5">Join Now</button>
+                <button type="submit" class="btn btn-success w-100 mb-5" style="background-color: #0EA68A;">Join Now</button>
             </form>
         </div>
     </div>
