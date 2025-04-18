@@ -1,3 +1,41 @@
+//Login System - LOGIN Button - For Members
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById('loginFormContainer').classList.remove('d-none'); // Show login form by default
+    document.getElementById('joinFormContainer').classList.add('d-none'); // Hide join form by default
+});
+
+document.getElementById('userType').addEventListener('change', function () {
+    if (this.value === 'member') {
+        document.getElementById('loginFormContainer').classList.remove('d-none');
+        document.getElementById('joinFormContainer').classList.add('d-none');
+    } else if (this.value === 'non-member') {
+        document.getElementById('joinFormContainer').classList.remove('d-none');
+        document.getElementById('loginFormContainer').classList.add('d-none');
+    }
+});
+
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const username = document.getElementById('loginUsername').value;
+    const password = document.getElementById('loginPassword').value;
+    const loginError = document.getElementById('loginError');
+
+    // Simple validation for demonstration purposes
+    if (username === 'member' && password === 'zenfit123') {
+        window.location.href = 'services.html';
+    } else {
+        loginError.textContent = 'Invalid username or password. Please try again.';
+    }
+});
+
+document.getElementById('joinForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert('Registration successful!');
+});
+
+
+//class Schedule Management System - SELECT CLASS TYPE
 function updateSchedule() {
     const scheduleList = document.querySelector('#schedule-list tbody');
     const classType = document.getElementById('class-type').value;
@@ -37,4 +75,40 @@ function updateSchedule() {
     }
 
     scheduleList.innerHTML = schedule;
+}
+
+//Booking Management System - BOOK NOW Button
+async function handleBooking(event) {
+    event.preventDefault();
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const date = document.getElementById('date').value;
+    const time = document.getElementById('time').value;
+    const classType = document.getElementById('class-type').value;
+
+    const bookingDetails = {
+        name,
+        email,
+        date,
+        time,
+        classType
+    };
+
+    try {
+        const response = await fetch('https://formsubmit.co/dhona.obina@outlook.com', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(bookingDetails)
+        });
+
+        if (response.ok) {
+            alert('Booking successfully sent!');
+        } else {
+            alert('Failed to send booking. Please try again.');
+        }
+    } catch (error) {
+        alert('An error occurred. Please try again.');
+    }
 }
