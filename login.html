@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="CodeGlimpse | Dhona Obina">
+    <meta name="description" content="ZenFit Studio - Where Expertise and Wellness Converge for Your Dynamic Life. Explore our tailored fitness solutions in Auckland.">
+    <meta name="keywords" content="ZenFit Studio, Fitness, Yoga, HIIT, Pilates, Gym, Wellness, Auckland">
     <title>ZenFit Studio - Login or Join</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css" />
+    
     <link rel="stylesheet" href="./css/globals.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    
     <script src="./js/script.js"></script>
 
-    <style>
-        body {
-            font-family: 'Montserrat', sans-serif;
-        }
-    </style>
 </head>
 <body class="bg-light">
     <body>
@@ -83,132 +83,135 @@
 
         <div id="joinFormContainer" class="d-none">
             <h2 class="text-center">Join ZenFit</h2>
-            <form id="joinForm" class="mx-auto w-50">
-                <div class="mb-3">
-                    <label for="joinFirstName" class="form-label">First Name</label>
-                    <input type="text" class="form-control" id="joinFirstName" name="first_name" required>
-                </div>
-                <div class="mb-3">
-                    <label for="joinLastName" class="form-label">Last Name</label>
-                    <input type="text" class="form-control" id="joinLastName" name="last_name" required>
-                </div>
-                <div class="mb-3">
-                    <label for="joinEmail" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="joinEmail" name="email" required>
-                </div>
-                <div class="mb-3">
-                    <label for="joinMobile" class="form-label">Mobile</label>
-                    <input type="tel" class="form-control" id="joinMobile" name="mobile" required>
-                </div>
-                <div class="mb-3">
-                    <label for="joinAddress" class="form-label">Address</label>
-                    <input type="text" class="form-control" id="joinAddress" name="address" required>
-                </div>
-                <div class="mb-3">
-                    <label for="gender" class="form-label">Gender</label>
-                    <select class="form-select" id="gender" name="gender" required>
-                        <option value="" selected disabled>Select</option>
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                        <option value="non-binary">Non-Binary</option>
-                        <option value="prefer_not_to_say">Prefer not to say</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
-                <div class="mb-3">
-                    <label for="membershipPlan" class="form-label">Membership Plan</label>
-                    <select class="form-select" id="membershipPlan" name="membership_plan" required>
-                        <option value="basic">Basic</option>
-                        <option value="premium">Premium</option>
-                        <option value="pro">Pro</option>
-                        <option value="freetrial">3 days Free Trial</option>
-                    </select>
-                </div>
-                <div class="mb-3">
-                    <label for="startDate" class="form-label">Start Date</label>
-                    <input type="date" class="form-control" id="startDate" name="start_date" required>
-                </div>
-                <h3 class="mt-4">Emergency Contact</h3>
-                <div class="mb-3">
-                    <label for="emergencyName" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="emergencyName" name="emergency_name" required>
-                </div>
-                <div class="mb-3">
-                    <label for="relationship" class="form-label">Relationship</label>
-                    <input type="text" class="form-control" id="relationship" name="relationship" required>
-                </div>
-                <div class="mb-3">
-                    <label for="emergencyPhone" class="form-label">Phone Number</label>
-                    <input type="tel" class="form-control" id="emergencyPhone" name="emergency_phone" required>
-                </div>
-                <h3 class="mt-4">Health Information</h3>
-    
-                <div class="mb-3">
-                    <label for="healthInfo" class="form-label">Existing Health Conditions (e.g., asthma, diabetes, heart disease)</label>
-                    <input type="text" class="form-control" id="healthInfo" name="health_info">
-                </div>
-                
-                <div class="mb-3">
-                    <label for="medications" class="form-label">Are you currently on any medications? (Please list them)</label>
-                    <input type="text" class="form-control" id="medications" name="medications">
-                </div>
+            <form id="joinForm" class="mx-auto w-50" action="https://formsubmit.co/dhona.obina@outlook.com" method="POST">
+            <input type="hidden" name="_subject" value="New Membership Form Submission">
+            <input type="hidden" name="_captcha" value="false">
+            <div class="mb-3">
+                <label for="joinFirstName" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="joinFirstName" name="first_name" required>
+            </div>
+            <div class="mb-3">
+                <label for="joinLastName" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="joinLastName" name="last_name" required>
+            </div>
+            <div class="mb-3">
+                <label for="joinEmail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="joinEmail" name="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="joinMobile" class="form-label">Mobile</label>
+                <input type="tel" class="form-control" id="joinMobile" name="mobile" required>
+            </div>
+            <div class="mb-3">
+                <label for="joinAddress" class="form-label">Address</label>
+                <input type="text" class="form-control" id="joinAddress" name="address" required>
+            </div>
+            <div class="mb-3">
+                <label for="gender" class="form-label">Gender</label>
+                <select class="form-select" id="gender" name="gender" required>
+                <option value="" selected disabled>Select</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="non-binary">Non-Binary</option>
+                <option value="prefer_not_to_say">Prefer not to say</option>
+                <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="membershipPlan" class="form-label">Membership Plan</label>
+                <select class="form-select" id="membershipPlan" name="membership_plan" required>
+                <option value="basic">Basic</option>
+                <option value="premium">Premium</option>
+                <option value="pro">Pro</option>
+                <option value="freetrial">3 days Free Trial</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="startDate" class="form-label">Start Date</label>
+                <input type="date" class="form-control" id="startDate" name="start_date" required>
+            </div>
+            <h3 class="mt-4">Emergency Contact</h3>
+            <div class="mb-3">
+                <label for="emergencyName" class="form-label">Name</label>
+                <input type="text" class="form-control" id="emergencyName" name="emergency_name" required>
+            </div>
+            <div class="mb-3">
+                <label for="relationship" class="form-label">Relationship</label>
+                <input type="text" class="form-control" id="relationship" name="relationship" required>
+            </div>
+            <div class="mb-3">
+                <label for="emergencyPhone" class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" id="emergencyPhone" name="emergency_phone" required>
+            </div>
+            <h3 class="mt-4">Health Information</h3>
+        
+            <div class="mb-3">
+                <label for="healthInfo" class="form-label">Existing Health Conditions (e.g., asthma, diabetes, heart disease)</label>
+                <input type="text" class="form-control" id="healthInfo" name="health_info">
+            </div>
+            
+            <div class="mb-3">
+                <label for="medications" class="form-label">Are you currently on any medications? (Please list them)</label>
+                <input type="text" class="form-control" id="medications" name="medications">
+            </div>
 
-                <div class="mb-3">
-                    <label for="allergies" class="form-label">Do you have any allergies? (e.g., food, medications, environment)</label>
-                    <input type="text" class="form-control" id="allergies" name="allergies">
-                </div>
+            <div class="mb-3">
+                <label for="allergies" class="form-label">Do you have any allergies? (e.g., food, medications, environment)</label>
+                <input type="text" class="form-control" id="allergies" name="allergies">
+            </div>
 
-                <div class="mb-3">
-                    <label for="injuries" class="form-label">Have you had any past injuries or surgeries that might affect your fitness?</label>
-                    <input type="text" class="form-control" id="injuries" name="injuries">
-                </div>
+            <div class="mb-3">
+                <label for="injuries" class="form-label">Have you had any past injuries or surgeries that might affect your fitness?</label>
+                <input type="text" class="form-control" id="injuries" name="injuries">
+            </div>
 
-                <div class="mb-3">
-                    <label for="exerciseLimitations" class="form-label">Do you have any physical limitations or restrictions regarding exercise?</label>
-                    <input type="text" class="form-control" id="exerciseLimitations" name="exercise_limitations">
-                </div>
+            <div class="mb-3">
+                <label for="exerciseLimitations" class="form-label">Do you have any physical limitations or restrictions regarding exercise?</label>
+                <input type="text" class="form-control" id="exerciseLimitations" name="exercise_limitations">
+            </div>
 
-                <div class="mb-3">
-                    <label for="doctorApproval" class="form-label">Has a doctor ever advised against exercise for any reason?</label>
-                    <select class="form-select" id="doctorApproval" name="doctor_approval">
-                        <option value="no">No</option>
-                        <option value="yes">Yes</option>
-                    </select>
-                </div>
+            <div class="mb-3">
+                <label for="doctorApproval" class="form-label">Has a doctor ever advised against exercise for any reason?</label>
+                <select class="form-select" id="doctorApproval" name="doctor_approval">
+                <option value="no">No</option>
+                <option value="yes">Yes</option>
+                </select>
+            </div>
 
-                <div class="mb-3">
-                    <label for="heartRateConcerns" class="form-label">Do you experience irregular heartbeat, dizziness, or fainting during physical activity?</label>
-                    <select class="form-select" id="heartRateConcerns" name="heart_rate_concerns">
-                        <option value="no">No</option>
-                        <option value="yes">Yes</option>
-                    </select>
-                </div>
+            <div class="mb-3">
+                <label for="heartRateConcerns" class="form-label">Do you experience irregular heartbeat, dizziness, or fainting during physical activity?</label>
+                <select class="form-select" id="heartRateConcerns" name="heart_rate_concerns">
+                <option value="no">No</option>
+                <option value="yes">Yes</option>
+                </select>
+            </div>
 
-                <div class="mb-3">
-                    <label for="pregnancy" class="form-label">Are you currently pregnant or recently postpartum?</label>
-                    <select class="form-select" id="pregnancy" name="pregnancy">
-                        <option value="not_applicable">Not applicable</option>
-                        <option value="yes">Yes</option>
-                        <option value="no">No</option>
-                    </select>
-                </div>
+            <div class="mb-3">
+                <label for="pregnancy" class="form-label">Are you currently pregnant or recently postpartum?</label>
+                <select class="form-select" id="pregnancy" name="pregnancy">
+                <option value="not_applicable">Not applicable</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+                </select>
+            </div>
 
-                <div class="mb-3">
-                    <label for="smokingHabits" class="form-label">Do you smoke or have a history of smoking?</label>
-                    <select class="form-select" id="smokingHabits" name="smoking_habits">
-                        <option value="never">Never</option>
-                        <option value="occasionally">Occasionally</option>
-                        <option value="regularly">Regularly</option>
-                        <option value="quit">Quit</option>
-                    </select>
-                </div>
+            <div class="mb-3">
+                <label for="smokingHabits" class="form-label">Do you smoke or have a history of smoking?</label>
+                <select class="form-select" id="smokingHabits" name="smoking_habits">
+                <option value="never">Never</option>
+                <option value="occasionally">Occasionally</option>
+                <option value="regularly">Regularly</option>
+                <option value="quit">Quit</option>
+                </select>
+            </div>
 
-                <div class="mb-3">
-                    <label for="fitnessGoals" class="form-label">What are your primary fitness goals? (e.g., weight loss, strength training, endurance improvement)</label>
-                    <input type="text" class="form-control" id="fitnessGoals" name="fitness_goals">
-                </div>
-                <button type="submit" class="btn btn-success w-100 mb-5" style="background-color: #0EA68A;">Join Now</button>
+            <div class="mb-3">
+                <label for="fitnessGoals" class="form-label">What are your primary fitness goals? (e.g., weight loss, strength training, endurance improvement)</label>
+                <input type="text" class="form-control" id="fitnessGoals" name="fitness_goals">
+            </div>
+            <button type="submit" class="btn btn-success w-100 mb-5" style="background-color: #0EA68A;">Join Now</button>
             </form>
+        </div>
         </div>
     </div>
 
