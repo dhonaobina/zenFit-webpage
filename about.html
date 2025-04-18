@@ -155,7 +155,7 @@
             <div class="row justify-content-center text-center">
             <!-- Trainer 1 -->
                 <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                    <div class="card shadow-sm">
+                    <div class="card shadow-sm trainer-card" data-bs-toggle="modal" data-bs-target="#trainerModal1">
                         <img src="./img/alexJohnson-YogaSpecialist.jpg" class="card-img-top" alt="Trainer 1">
                         <div class="card-body">
                             <h5 class="card-title">Alex Johnson</h5>
@@ -165,7 +165,7 @@
                 </div>
             <!-- Trainer 2 -->
                 <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                    <div class="card shadow-sm">
+                    <div class="card shadow-sm trainer-card" data-bs-toggle="modal" data-bs-target="#trainerModal2">
                         <img src="./img/sophiaLee-hiitExpert.jpg" class="card-img-top" alt="Trainer 2">
                         <div class="card-body">
                             <h5 class="card-title">Sophia Lee</h5>
@@ -175,7 +175,7 @@
                 </div>
             <!-- Trainer 3 -->
                 <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                    <div class="card shadow-sm">
+                    <div class="card shadow-sm trainer-card" data-bs-toggle="modal" data-bs-target="#trainerModal3">
                         <img src="./img/michaelBrown-pilatesInstructor.jpg" class="card-img-top" alt="Trainer 3">
                         <div class="card-body">
                             <h5 class="card-title">Michael Brown</h5>
@@ -185,7 +185,7 @@
                 </div>
             <!-- Trainer 4 -->
                 <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                    <div class="card shadow-sm">
+                    <div class="card shadow-sm trainer-card" data-bs-toggle="modal" data-bs-target="#trainerModal4">
                         <img src="./img/emilyDavis-StrengthCoach.jpg" class="card-img-top" alt="Trainer 4">
                         <div class="card-body">
                             <h5 class="card-title">Emily Davis</h5>
@@ -195,7 +195,7 @@
                 </div>
             <!-- Trainer 5 -->
                 <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                    <div class="card shadow-sm">
+                    <div class="card shadow-sm trainer-card" data-bs-toggle="modal" data-bs-target="#trainerModal5">
                         <img src="./img/chrisWilson-cardioTrainer.jpg" class="card-img-top" alt="Trainer 5">
                         <div class="card-body">
                             <h5 class="card-title">Chris Wilson</h5>
@@ -203,8 +203,131 @@
                         </div>
                     </div>
                 </div>
+            
             </div>
         </div>
+        <!-- Modal Templates for Trainers -->
+        <!-- Modal for Trainer 1 -->
+        <div class="modal fade" id="trainerModal1" tabindex="-1" aria-labelledby="trainerModalLabel1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Alex Johnson - Yoga Specialist</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body text-start">
+                        <div class="text-center">
+                            <img src="./img/alexJohnson-YogaSpecialist.jpg" class="img-fluid mb-3" alt="Alex Johnson" style="max-height: 300px; object-fit: cover;">
+                        </div>
+                        <p>
+                            Alex Johnson is a certified yoga instructor with over 10 years of experience. Her passion for wellness and mindfulness has helped thousands achieve a balanced and healthy lifestyle.
+                        </p>
+                        <br>
+                        <p>
+                            She specializes in Hatha and Vinyasa yoga, focusing on improving flexibility, strength, and mental clarity through personalized guidance and supportive teaching methods.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal for Trainer 2 -->
+        <div class="modal fade" id="trainerModal2" tabindex="-1" aria-labelledby="trainerModalLabel2" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title">Sophia Lee - HIIT Expert</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-start">
+                <div class="text-center">
+                    <img src="./img/sophiaLee-hiitExpert.jpg" class="img-fluid mb-3" alt="Sophia Lee" style="max-height: 300px; object-fit: cover;">
+                </div>
+                <p>
+                    Sophia Lee specializes in High-Intensity Interval Training (HIIT), pushing clients to their limits while maintaining proper technique and recovery strategies.
+                </p>
+                <br>
+                <p>
+                    With her energetic and motivational approach, Sophia ensures every session is both challenging and enjoyable, helping clients achieve their fitness goals efficiently.
+                </p>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- Modal for Trainer 3 -->
+        <div class="modal fade" id="trainerModal3" tabindex="-1" aria-labelledby="trainerModalLabel3" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title">Michael Brown - Pilates Instructor</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-start">
+                <div class="text-center">
+                    <img src="./img/michaelBrown-pilatesInstructor.jpg" class="img-fluid mb-3" alt="Michael Brown" style="max-height: 300px; object-fit: cover;">
+                </div>
+                <p>
+                    Michael Brown is a passionate Pilates instructor, focusing on core strength, flexibility, and overall body awareness to help clients build resilience.
+                </p>
+                <br>
+                <p>
+                    With over 7 years of experience, Michael tailors his sessions to suit individual needs, ensuring a safe and effective workout for clients of all fitness levels.
+                </p>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- Modal for Trainer 4 -->
+        <div class="modal fade" id="trainerModal4" tabindex="-1" aria-labelledby="trainerModalLabel4" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title">Emily Davis - Strength Coach</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-start">
+                <div class="text-center">
+                    <img src="./img/emilyDavis-StrengthCoach.jpg" class="img-fluid mb-3" alt="Emily Davis" style="max-height: 300px; object-fit: cover;">
+                </div>
+                <p>
+                    Emily Davis is a certified strength and conditioning specialist with over 8 years of experience in resistance training. 
+                    She helps clients build muscle, improve endurance, and maximize overall strength.
+                </p>
+                <br>
+                <p>
+                    Her expertise includes powerlifting techniques, personalized workout planning, and injury prevention strategies.
+                </p>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- Modal for Trainer 5 -->
+        <div class="modal fade" id="trainerModal5" tabindex="-1" aria-labelledby="trainerModalLabel5" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title">Chris Wilson - Cardio Trainer</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-start">
+                <div class="text-center">
+                    <img src="./img/chrisWilson-cardioTrainer.jpg" class="img-fluid mb-3" alt="Chris Wilson" style="max-height: 300px; object-fit: cover;">
+                </div>
+                <p>
+                    Chris Wilson specializes in cardiovascular endurance training, helping individuals improve stamina, heart health, and athletic performance.
+                </p>
+                <br>
+                <p>
+                    With his dynamic programs focusing on HIIT, running techniques, and heart-rate monitoring, Chris has guided many towards peak fitness levels.
+                </p>
+                </div>
+            </div>
+            </div>
+        </div>
+
     <!-- Carousel for Mobile View -->
         <div id="trainersCarousel" class="carousel slide d-md-none" data-bs-ride="carousel">
             <div class="carousel-inner">

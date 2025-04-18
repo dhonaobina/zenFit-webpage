@@ -56,12 +56,22 @@
             <h1>ZENFIT STUDIO</h1>
             <p>Where Expertise and Wellness Converge for Your Dynamic Life</p>
             <div class="hero-buttons">
-                <button class="btn join-now"><a href="#join-form-section" style="text-decoration: none; color: inherit;">JOIN US NOW</a></button>
+                <button class="btn join-now"><a href="about.html" style="text-decoration: none; color: inherit;">JOIN US NOW</a></button>
                 <button class="btn book-class"><a href="login.html">BOOK A CLASS</a></button>
             </div>
         </div>
     </div>
-
+    <!-- What We Offer Section -->
+    <section class="what-we-offer py-5" style="background-color: #F4F4F4;">
+        <div class="container text-center">
+            <br>
+            <h2 class="mb-4">What We Offer at <span style="color: #0EA68A; font-weight: bold;">ZenFit Studio</span></h2>
+            <p class="mb-4">Tailored fitness solutions designed for <span style="font-weight: bold;">busy professionals</span> in Auckland.</p>
+            <p class="mb-4">From <span style="font-weight: bold;">Yoga</span> to <span style="font-weight: bold;">HIIT</span> and <span style="font-weight: bold;">Pilates</span>, we provide workouts that fit your dynamic lifestyle.</p>
+            <a href="about.html" class="btn btn-primary mt-3" style="background-color: #0EA68A; border: none;">Explore More</a>
+        </div>
+    </section>
+    
     <!--Home Content-->
     <!-- Desktop View: 3-Column Layout -->
     <div class="d-none d-md-flex services">
@@ -102,7 +112,7 @@
 
     </div>
 
-    <!-- Mobile View: Carousel -->
+    <!-- Home Content - Mobile View: Carousel -->
     <div id="serviceCarousel" class="carousel slide d-md-none" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -161,18 +171,17 @@
             <a href="about.html" class="btn btn-primary mt-3" style="background-color: #0EA68A; border: none;">Learn More</a>
         </div>
     </section>
+
     <!-- Membership Plans Section -->
     <section class="container mt-5" style="background-color: #F7D1D1; padding: 50px; border-radius: 10px;">
         <h1 class="text-center mb-4">Membership Plans</h1>
-
-        <div class="row">
-            <!-- Basic Plan -->
-            <div class="col-md-4 d-flex align-items-stretch">
-                <div class="card text-center w-100 text-white" style="background-color: #3E3E5B ;">
-                    <div class="card-header bg-primary text-white" >
-                        Basic Plan
-                    </div>
-                    <div class="card-body">
+    
+        <!-- Desktop View: Cards Layout -->
+        <div class="row d-none d-md-flex align-items-stretch"> <!-- Hidden on mobile, visible on desktop -->
+            <div class="col-md-4">
+                <div class="card text-center text-white h-100" style="background-color: #3E3E5B;">
+                    <div class="card-header bg-primary text-white">Basic Plan</div>
+                    <div class="card-body" style="min-height: 250px;">
                         <h2 class="card-title">$12.99 per week</h2>
                         <br>
                         <p>Perfect for beginners looking to start their fitness journey.</p>
@@ -186,24 +195,22 @@
                             <li>✔ Gym Facility Access</li>
                             <br>
                             <li>✘ HIIT Training & Personalized Coaching</li>
+                            <br>
                         </ul>
                     </div>
                 </div>
             </div>
             <br>
-            <!-- Premium Plan -->
-            <div class="col-md-4 d-flex align-items-stretch">
-                <div class="card text-center w-100 text-white" style="background-color: #3E3E5B;">
-                    <div class="card-header bg-success text-white">
-                        Premium Plan
-                    </div>
-                    <div class="card-body">
+    
+            <div class="col-md-4">
+                <div class="card text-center text-white h-100" style="background-color: #3E3E5B;">
+                    <div class="card-header bg-success text-white align-items-stretch">Premium Plan</div>
+                    <div class="card-body" style="min-height: 250px;">
                         <h2 class="card-title">$18.99 per week</h2>
                         <br>
                         <p>For those looking for a well-rounded fitness routine.</p>
                         <br>
                         <br>
-                       
                         <ul class="list-unstyled pb-2">
                             <li>✔ Unlimited Yoga & Pilates Classes</li>
                             <br>
@@ -217,19 +224,16 @@
                 </div>
             </div>
             <br>
-            <!-- Pro Plan -->
-            <div class="col-md-4 d-flex align-items-stretch">
-                <div class="card text-center w-100 text-white" style="background-color: #3E3E5B;">
-                    <div class="card-header bg-danger text-white">
-                        Pro Plan
-                    </div>
-                    <div class="card-body">
+    
+            <div class="col-md-4">
+                <div class="card text-center text-white h-100" style="background-color: #3E3E5B;">
+                    <div class="card-header bg-danger text-white align-items-stretch">Pro Plan</div>
+                    <div class="card-body" style="min-height: 250px;">
                         <h2 class="card-title">$49.99 per week</h2>
                         <br>
                         <p>Designed for dedicated fitness enthusiasts looking for the best experience.</p>
                         <br>
                         <br>
-                        
                         <ul class="list-unstyled pb-2">
                             <li>✔ Unlimited Yoga, Pilates & HIIT Classes</li>
                             <br>
@@ -243,41 +247,98 @@
                 </div>
             </div>
         </div>
-    </section>
     
-<!-- Join Form Section -->
-<section class="join-form-section responsive-section py-5" style="background-color: #F9F9F9;" id="join-form-section">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <h2 class="text-center mb-4">Ready to Join?</h2>
-                <p class="text-center mb-4">Fill out this form and we will get in touch with you!</p>
-                <form>
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Full Name</label>
-                        <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+        <!-- Mobile View: Carousel -->
+        <div id="membershipCarousel" class="carousel slide d-md-none" data-bs-ride="false"> <!-- Hidden on desktop -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="card text-center text-white" style="background-color: #3E3E5B;">
+                        <div class="card-header bg-primary text-white">Basic Plan</div>
+                        <div class="card-body">
+                            <h2 class="card-title">$12.99 per week</h2>
+                            <br>
+                            <p>Perfect for beginners looking to start their fitness journey.</p>
+                            <br>
+                            <br>
+                            <ul class="list-unstyled pb-2">
+                                <li>✔ Access to Yoga Classes</li>
+                                <br>
+                                <li>✔ Limited Pilates Sessions</li>
+                                <br>
+                                <li>✔ Gym Facility Access</li>
+                                <br>
+                                <li>✘ HIIT Training & Personalized Coaching</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email Address</label>
-                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                </div>
+    
+                <div class="carousel-item">
+                    <div class="card text-center text-white" style="background-color: #3E3E5B;">
+                        <div class="card-header bg-success text-white">Premium Plan</div>
+                        <div class="card-body">
+                            <h2 class="card-title">$18.99 per week</h2>
+                            <br>
+                            <p>For those looking for a well-rounded fitness routine.</p>
+                            <br>
+                            <br>
+                            <ul class="list-unstyled pb-2">
+                                <li>✔ Unlimited Yoga & Pilates Classes</li>
+                                <br>
+                                <li>✔ Access to HIIT Training</li>
+                                <br>
+                                <li>✔ Gym Facility Access</li>
+                                <br>
+                                <li>✔ One Monthly Personalized Training Session</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="mb-3">
-                        <label for="phone" class="form-label">Phone Number</label>
-                        <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+                </div>
+    
+                <div class="carousel-item">
+                    <div class="card text-center text-white" style="background-color: #3E3E5B;">
+                        <div class="card-header bg-danger text-white">Pro Plan</div>
+                        <div class="card-body">
+                            <h2 class="card-title">$49.99 per week</h2>
+                            <br>
+                            <p>Designed for dedicated fitness enthusiasts looking for the best experience.</p>
+                            <br>
+                            <br>
+                            <ul class="list-unstyled pb-2">
+                                <li>✔ Unlimited Yoga, Pilates & HIIT Classes</li>
+                                <br>
+                                <li>✔ Personalized Fitness & Nutrition Coaching</li>
+                                <br>
+                                <li>✔ Exclusive Access to VIP Fitness Events</li>
+                                <br>
+                                <li>✔ 24/7 Gym Facility Access</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="mb-3">
-                        <label for="message" class="form-label">Message</label>
-                        <textarea class="form-control" id="message" rows="4" placeholder="Tell us about your fitness goals"></textarea>
-                    </div>
-                    <div class="text-center">
-                        <button type="submit" class="btn btn-primary px-4 py-2" style="background-color: #0EA68A; border: none; border-radius: 5px; font-size: 1rem; transition: background-color 0.3s ease;" onmouseover="this.style.backgroundColor='#0C8A6F'" onmouseout="this.style.backgroundColor='#0EA68A'">Submit</button>
-                    </div>
-                </form>
+                </div>
             </div>
+    
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#membershipCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#membershipCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
         </div>
-    </div>
-</section>
+    </section>
+    <br>
+    
 
+    <!-- Join Now Section -->
+    <section class="join-now-section py-5" style="background-color: #F4F4F4;">
+        <div class="container text-center">
+            <h2 class="mb-4">Join Us Today!</h2>
+            <p class="mb-4">Experience the ZenFit difference and take your fitness journey to the next level.</p>
+            <a href="login.html#joinFormContainer" class="btn btn-primary mt-3" style="background-color: #0EA68A; border: none;">Join Now</a>
+        </div>
+    </section>   
+    
 <!--Footer-->
 <footer class="footer text-white pt-5 pb-2" style="background-color: #3E3E5B;">
     <div class="container">
