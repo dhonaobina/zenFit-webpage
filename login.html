@@ -61,10 +61,12 @@
             <option value="non-member">I'm joining Today!</option>
             </select>
         </div>
-
+        <br>
+        <br>
+        <br>
         <div id="loginFormContainer" class="d-none">
             <h2 class="text-center">Login</h2>
-            <form id="loginForm" class="mx-auto w-50">
+            <form id="loginForm" class="mx-auto w-50" action="/send-email" method="POST">
                 <div class="mb-3">
                     <label for="loginUsername" class="form-label">Username</label>
                     <input type="text" class="form-control" id="loginUsername" name="username" required>
@@ -118,6 +120,7 @@
                         <option value="basic">Basic</option>
                         <option value="premium">Premium</option>
                         <option value="pro">Pro</option>
+                        <option value="freetrial">3 days Free Trial</option>
                     </select>
                 </div>
                 <div class="mb-3">
@@ -208,7 +211,7 @@
         </div>
     </div>
 
-    <!--Footer-->
+<!--Footer-->
 <footer class="footer text-white pt-5 pb-2" style="background-color: #3E3E5B;">
     <div class="container">
         <div class="row text-center text-md-start">

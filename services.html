@@ -9,6 +9,7 @@
     
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/globals.css" />
+    <script src="./js/script.js"></script>
 
     <style>
         body {
@@ -135,7 +136,7 @@
                     </div>
                     <br>
                     <h3 class="mb-3" style="color: #3E3E5B; font-weight: bold; text-transform: uppercase; text-shadow: 1px 1px 2px #3E3E5B;">Book Your Spot</h3>
-                    <form class="booking-form">
+                    <form class="booking-form" onsubmit="return handleBooking(event)"></form>
                         <div class="mb-3">
                             <label for="name" class="form-label">Name</label>
                             <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
@@ -169,49 +170,7 @@
         </div>
     </section>
 
-    <script>
-        function updateSchedule() {
-            const scheduleList = document.querySelector('#schedule-list tbody');
-            const classType = document.getElementById('class-type').value;
-
-            let schedule = '';
-            if (classType === 'yoga') {
-                schedule = `
-                    <tr><td>Monday</td><td>6:00 AM - 7:30 AM</td></tr>
-                    <tr><td>Tuesday</td><td>8:00 AM - 9:30 AM</td></tr>
-                    <tr><td>Wednesday</td><td>5:30 PM - 7:00 PM</td></tr>
-                    <tr><td>Thursday</td><td>6:00 AM - 7:30 AM</td></tr>
-                    <tr><td>Friday</td><td>7:00 PM - 8:30 PM</td></tr>
-                    <tr><td>Saturday</td><td>9:00 AM - 10:30 AM</td></tr>
-                    <tr><td>Sunday</td><td>4:00 PM - 5:30 PM</td></tr>
-                `;
-                
-            } else if (classType === 'hiit') {
-                schedule = `
-                    <tr><td>Monday</td><td>5:00 AM - 9:00 PM</td></tr>
-                    <tr><td>Tuesday</td><td>5:00 AM - 9:00 PM</td></tr>
-                    <tr><td>Wednesday</td><td>5:00 AM - 9:00 PM</td></tr>
-                    <tr><td>Thursday</td><td>5:00 AM - 9:00 PM</td></tr>
-                    <tr><td>Friday</td><td>5:00 AM - 9:00 PM</td></tr>
-                    <tr><td>Saturday</td><td>5:00 AM - 9:00 PM</td></tr>
-                    <tr><td>Sunday</td><td>5:00 AM - 9:00 PM</td></tr>
-                `;
-            } else if (classType === 'pilates') {
-                schedule = `
-                    <tr><td>Monday</td><td>5:00 AM - 9:00 PM</td></tr>
-                    <tr><td>Tuesday</td><td>5:00 AM - 9:00 PM</td></tr>
-                    <tr><td>Wednesday</td><td>5:00 AM - 9:00 PM</td></tr>
-                    <tr><td>Thursday</td><td>5:00 AM - 9:00 PM</td></tr>
-                    <tr><td>Friday</td><td>5:00 AM - 9:00 PM</td></tr>
-                    <tr><td>Saturday</td><td>5:00 AM - 9:00 PM</td></tr>
-                    <tr><td>Sunday</td><td>5:00 AM - 9:00 PM</td></tr>
-                `;
-            }
-
-            scheduleList.innerHTML = schedule;
-        }
-    </script>
-
+    <script src="./js/script.js" defer></script>
 
 <!--Footer-->
 <footer class="footer text-white pt-5 pb-2" style="background-color: #3E3E5B;">
