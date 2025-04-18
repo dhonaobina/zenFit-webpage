@@ -112,3 +112,27 @@ async function handleBooking(event) {
         alert('An error occurred. Please try again.');
     }
 }
+
+//Contact Form - SEND MESSAGE Button
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent default form submission
+
+    // Form validation
+    let isValid = true;
+    const form = event.target;
+    const inputs = form.querySelectorAll('input, textarea');
+
+    inputs.forEach(input => {
+        if (!input.checkValidity()) {
+            input.classList.add('is-invalid');
+            isValid = false;
+        } else {
+            input.classList.remove('is-invalid');
+        }
+    });
+
+    if (isValid) {
+        alert('Your message has been sent successfully!');
+        form.reset(); // Reset the form after submission
+    }
+});
